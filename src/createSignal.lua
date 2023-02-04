@@ -23,7 +23,7 @@ type FireSignal<T> = types.FireSignal<T>
 
 type InternalSubscription<T> = { callback: Callback<T>, unsubscribed: boolean }
 
-local function createSignal<T>(initialValue: T): (Signal<T>, FireSignal<T>)
+local function createSignal<T>(): (Signal<T>, FireSignal<T>)
 	local subscriptions: { [Callback<T>]: InternalSubscription<T> } = {}
 	local suspendedSubscriptions = {}
 

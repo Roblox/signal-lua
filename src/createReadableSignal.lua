@@ -14,7 +14,7 @@ export type FireSignal<T> = (T) -> ()
 local createSignal = require(script.Parent.createSignal)
 
 local function createReadableSignal<T>(initialValue: T): (ReadableSignal<T>, FireSignal<T>)
-	local innerSignal, innerFire = createSignal(initialValue)
+	local innerSignal, innerFire = createSignal()
 
 	local lastValue = initialValue
 

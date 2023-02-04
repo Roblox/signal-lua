@@ -8,7 +8,7 @@ local expect = JestGlobals.expect
 local createSignal = require(script.Parent.Parent.createSignal)
 
 it("should fire subscribers and disconnect them", function()
-	local signal, fire = createSignal(nil :: any)
+	local signal, fire = createSignal()
 
 	local spy, spyFn = jest.fn()
 	local subscription = signal:subscribe(spyFn)
@@ -32,7 +32,7 @@ it("should fire subscribers and disconnect them", function()
 end)
 
 it("should handle multiple subscribers", function()
-	local signal, fire = createSignal(nil :: any)
+	local signal, fire = createSignal()
 
 	local spyA, spyAFn = jest.fn()
 	local spyB, spyBFn = jest.fn()
@@ -69,7 +69,7 @@ it("should handle multiple subscribers", function()
 end)
 
 it("should stop firing a connection if disconnected mid-fire", function()
-	local signal, fire = createSignal(nil :: any)
+	local signal, fire = createSignal()
 
 	-- In this test, we'll connect two listeners that each try to disconnect
 	-- the other. Because the order of listeners firing isn't defined, we
@@ -95,7 +95,7 @@ it("should stop firing a connection if disconnected mid-fire", function()
 end)
 
 it("allows new subscriptions during firing, only updates them on subsequent fires", function()
-	local signal, fire = createSignal(0)
+	local signal, fire = createSignal()
 	local innerSubscription
 	local innerSub, innerSubFn = jest.fn()
 	local outerSub, outerSubFn = jest.fn()
