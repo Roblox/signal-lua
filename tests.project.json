@@ -1,0 +1,12 @@
+{
+  "name": "SignalTest",
+  "tree": {
+    "$className": "Folder",
+    "Packages": {
+      "$path": "Packages",
+      "Signal": {
+        "$path": "src"
+      }
+    }
+  }
+}
