@@ -1,10 +1,14 @@
--- Generator information:
--- Human name: Signal
--- Variable name: Signal
--- Repo name: signal-lua
+--!strict
+local createSignal = require(script.createSignal)
+local createReadableSignal = require(script.createReadableSignal)
+local types = require(script.types)
 
-local hello = require(script.hello)
+export type Subscription = types.Subscription
+export type Signal<T> = types.Signal<T>
+export type ReadableSignal<T> = types.ReadableSignal<T>
+export type FireSignal<T> = types.FireSignal<T>
 
 return {
-	hello = hello,
+	createSignal = createSignal,
+	createReadableSignal = createReadableSignal,
 }

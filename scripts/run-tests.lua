@@ -1,9 +1,28 @@
-local Root = script.Parent["SignalTest"]
+local Root = script.Parent.SignalTest
+local processServiceExists, ProcessService = pcall(function()
+	return game:GetService("ProcessService")
+end)
 
-local TestEZ = require(Root.Packages.Dev.TestEZ)
+local Packages = Root.Packages
+if not Packages then
+	game:GetService("TestService"):Error("Invalid Package configuration. Try running `rotrieve install` to remedy.")
+	ProcessService:ExitAsync(1)
+end
 
--- Run all tests, collect results, and report to stdout.
-TestEZ.TestBootstrap:run(
-	{ Root.Packages["Signal"] },
-	TestEZ.Reporters.TextReporter
-)
+local runCLI = require(Packages.Dev.Jest).runCLI
+
+local status, result = runCLI(Packages.Signal, {}, { Packages.Signal }):awaitStatus()
+
+if status == "Rejected" then
+	print(result)
+end
+
+if status == "Resolved" and result.results.numFailedTestSuites == 0 and result.results.numFailedTests == 0 then
+	if processServiceExists then
+		ProcessService:ExitAsync(0)
+	end
+end
+
+if processServiceExists then
+	ProcessService:ExitAsync(1)
+end

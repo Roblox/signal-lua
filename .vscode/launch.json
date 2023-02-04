@@ -1,0 +1,29 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "roblox-lrdb",
+            "request": "launch",
+            "name": "Debug Unit Tests",
+            "program": "${userHome}/bin/roblox-cli.exe",
+            "args": [
+                "run",
+                "--load.model",
+                "tests.project.json",
+                "--run",
+                "scripts/run-tests.lua",
+                "--fastFlags.allOnLuau",
+                "--lua.globals",
+                "__DEV__=true",
+                "--fastFlags.overrides",
+                "EnableLoadModule=true"
+            ],
+            "cwd": "${workspaceFolder}",
+            "runtime": {
+                "channel": "develop",
+                "version": "latest",
+                "variant": "robloxdev-cli",
+            },
+        },
+    ]
+}
