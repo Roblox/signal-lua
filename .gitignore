@@ -1,0 +1,6 @@
+/luacov.*
+/site
+/Packages/*
+!/Packages/.robloxrc
+rotriever.lock
+*.rbxmx

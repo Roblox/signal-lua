@@ -1,0 +1,17 @@
+[package]
+name = "signal-lua"
+author = "Roblox"
+version = "0.1.0"
+
+# Specifies the path to the source code for this package
+content_root = "src"
+
+# Specifies the license associated with this code
+license = "MIT"
+
+[dependencies]
+# Add dependencies here. Dependencies might look like:
+# Roact = "github.com/roblox/roact@1.0"
+
+[dev_dependencies]
+TestEZ = "github.com/roblox/TestEZ@0.4.1"
