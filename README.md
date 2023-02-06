@@ -1,18 +1,20 @@
 <h1 align="center">Signal</h1>
 <div align="center">
-	<a href="https://travis-ci.org/Roblox/signal-lua">
-		<img src="https://api.travis-ci.org/Roblox/signal-lua.svg?branch=master" alt="Travis-CI Build Status" />
+	<a href="https://github.com/Roblox/singal-lua/actions/workflows/ci.yml">
+		<img src="https://github.com/Roblox/signal-lua/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
 	</a>
-	<a href="https://coveralls.io/github/Roblox/signal-lua?branch=master">
+	<!-- Coveralls is currently broken -->
+	<!-- <a href="https://coveralls.io/github/Roblox/signal-lua?branch=master">
 		<img src="https://coveralls.io/repos/github/Roblox/signal-lua/badge.svg?branch=master" alt="Coveralls Coverage" />
-	</a>
-	<a href="https://roblox.github.io/signal-lua">
+	</a> -->
+	<!-- Docs site is not currently deployed -->
+	<!-- <a href="https://roblox.github.io/signal-lua">
 		<img src="https://img.shields.io/badge/docs-website-green.svg" alt="Documentation" />
-	</a>
+	</a> -->
 </div>
 
 <div align="center">
-	Fill in a tagline about Signal here
+	A simple Signal implementation for Luau, approximating the functionality of `RBXScriptSignal`, but with an API adjusted for usability and .
 </div>
 
 <div>&nbsp;</div>
@@ -21,16 +23,15 @@
 
 ## Installation
 
-### Filesystem
-* Add this repository as a Git submodule or copy it into your project
-* Use a plugin like [Rojo](https://github.com/LPGhatguy/rojo) to sync the `src` folder into a place
-
-### Model File
-* Download the `rbxmx` model file attached to the latest release from the [GitHub releases page](https://github.com/Roblox/signal-lua/releases)
-* Insert the model into Studio into a place like `ReplicatedStorage`
+Signal is a rotriever package and can be installed by adding the following line to the `[dependencies]` section of your `rotriever.toml` file:
+```
+Signal = "github.com/roblox/signal-lua@1.0"
+```
 
 ## Documentation
-Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua).
+
+*Under Construction!*
+<!-- Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua). -->
 
 ## License
 Licensed under the MIT license ([LICENSE.txt](LICENSE.txt) or http://opensource.org/licenses/MIT).
