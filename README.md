@@ -7,14 +7,13 @@
 	<!-- <a href="https://coveralls.io/github/Roblox/signal-lua?branch=master">
 		<img src="https://coveralls.io/repos/github/Roblox/signal-lua/badge.svg?branch=master" alt="Coveralls Coverage" />
 	</a> -->
-	<!-- Docs site is not currently deployed -->
-	<!-- <a href="https://roblox.github.io/signal-lua">
+	<a href="https://roblox.github.io/signal-lua">
 		<img src="https://img.shields.io/badge/docs-website-green.svg" alt="Documentation" />
-	</a> -->
+	</a>
 </div>
 
 <div align="center">
-	A simple Signal implementation for Luau, approximating the functionality of `RBXScriptSignal`, but with an API adjusted for usability and .
+	A simple Signal implementation for Luau, approximating the functionality of `RBXScriptSignal`, but with an API adjusted for additional flexibility.
 </div>
 
 <div>&nbsp;</div>
@@ -29,9 +28,7 @@ Signal = "github.com/roblox/signal-lua@1.0"
 ```
 
 ## Documentation
-
-*Under Construction!*
-<!-- Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua). -->
+Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua).
 
 ## License
 Licensed under the MIT license ([LICENSE.txt](LICENSE.txt) or http://opensource.org/licenses/MIT).

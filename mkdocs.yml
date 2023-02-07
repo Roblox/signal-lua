@@ -6,10 +6,10 @@ repo_url: https://github.com/Roblox/signal-lua
 theme:
   name: material
   palette:
-    primary: 'Light Blue'
-    accent: 'Light Blue'
+    primary: "Light Blue"
+    accent: "Light Blue"
 
-pages:
+nav:
   - Home: index.md
   - API Reference: api-reference.md
 
