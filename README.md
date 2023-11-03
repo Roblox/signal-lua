@@ -1,13 +1,13 @@
 <h1 align="center">Signal</h1>
 <div align="center">
 	<a href="https://github.com/Roblox/singal-lua/actions/workflows/ci.yml">
-		<img src="https://github.com/Roblox/signal-lua/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
+		<img src="https://github.com/Roblox/signal-lua-internal/actions/workflows/ci.yml/badge.svg" alt="CI Build Status" />
 	</a>
 	<!-- Coveralls is currently broken -->
 	<!-- <a href="https://coveralls.io/github/Roblox/signal-lua?branch=master">
 		<img src="https://coveralls.io/repos/github/Roblox/signal-lua/badge.svg?branch=master" alt="Coveralls Coverage" />
 	</a> -->
-	<a href="https://roblox.github.io/signal-lua">
+	<a href="https://roblox.github.io/signal-lua-internal">
 		<img src="https://img.shields.io/badge/docs-website-green.svg" alt="Documentation" />
 	</a>
 </div>
@@ -24,11 +24,11 @@
 
 Signal is a rotriever package and can be installed by adding the following line to the `[dependencies]` section of your `rotriever.toml` file:
 ```
-Signal = "github.com/roblox/signal-lua@1.0"
+Signal = "github.com/roblox/signal-lua-internal@1.0"
 ```
 
 ## Documentation
-Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua).
+Documentation for Signal is available on [the official documentation website](https://roblox.github.io/signal-lua-internal).
 
 ## License
 Licensed under the MIT license ([LICENSE.txt](LICENSE.txt) or http://opensource.org/licenses/MIT).
