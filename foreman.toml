@@ -4,3 +4,4 @@ stylua = { source = "Roblox/JohnnyMorganz-StyLua", version = "0.16.0" }
 rotrieve = { source = "Roblox/rotriever", version = "0.5.9" }
 lest = { source = "Roblox/lest", version = "3.x.x" }
 rbx-aged-cli = { source = "Roblox/rbx-aged-tool", version = "5.x.x" }
+lute = { source = "luau-lang/lute", version = "=1.0.1-nightly.20261110" }

@@ -2,6 +2,7 @@
 name = "Signal"
 authors = ["Roblox"]
 version = "1.0.0"
+repository = "https://github.com/Roblox/signal-lua-internal"
 content_root = "src"
 license = "MIT"
 files = [ "*", "!*.spec.lua", "!jest.config.lua" ]
